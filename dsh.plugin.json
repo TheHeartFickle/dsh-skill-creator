@@ -1,0 +1,15 @@
+{
+  "id": "theheartfickle/dsh-skill-creator",
+  "version": "0.1.0",
+  "main": "./lib/index.js",
+  "description": "DSH Skill Creator 插件：注册 dsh-skill-creator skill，用于创建、评测和改进 DSH skill",
+  "engines": {
+    "dsh": ">=0.0.1"
+  },
+  "contributes": {
+    "tools": [],
+    "skills": [
+      "dsh-skill-creator"
+    ]
+  }
+}

@@ -21,6 +21,16 @@ dsh plugin --profile web add @theheartfickle/dsh-skill-creator-plugin@latest
 
 仓库已提供 `dsh.plugin.json`（id：`theheartfickle/dsh-skill-creator`），为后续接入 `dsh registry` 通道做好准备。
 
+## 磁盘写入说明
+
+- **不会写入 skill 安装目录**：插件不会在 `.dsh/skills`、`.agents/skills` 或任何 skill 安装位置保存/修改文件。
+- **使用 skill 创建/评测/评审时**：只会在你指定的工作区或系统临时目录产生实际项目文件，例如：
+  - 新 skill 草稿：`SKILL.md`、`evals/`、`references/`、`agents/` 等
+  - 评测 workspace：`iteration-N/`、`eval-*/with_skill/outputs/`、`grading.json`、`execution.json`
+  - benchmark 结果：`benchmark.json`、`benchmark.md`
+  - 评审反馈：`feedback.json`
+- 如果系统临时目录不可写，会回退到工作区 `.dsh-skill-creator-tmp/` 存放临时数据。
+
 ## 现状
 
 - 当前包含 **1 个 skill**：`dsh-skill-creator`，已可用。

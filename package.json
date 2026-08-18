@@ -20,7 +20,9 @@
     "LICENSE"
   ],
   "scripts": {
-    "test": "node --test"
+    "test": "node --test \"test/**/*.test.mjs\" \"dsh-skill-creator/scripts/test/**/*.test.mjs\"",
+    "package:registry": "node scripts/package-registry.mjs",
+    "prepublishOnly": "npm test"
   },
   "dsh": {
     "bundle": {
@@ -35,5 +37,19 @@
   "license": "MIT",
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "author": "TheHeartFickle",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheHeartFickle/dsh-skill-creator.git"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "dsh",
+    "skill",
+    "plugin",
+    "deepseek-harness"
+  ]
 }

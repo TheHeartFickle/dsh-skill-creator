@@ -38,3 +38,4 @@ Thumbs.db
 # DSH / local scratch
 source-repo/
 .dsh-skill-creator-tmp/
+registry/

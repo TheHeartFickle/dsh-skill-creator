@@ -17,9 +17,17 @@
 dsh plugin --profile web add @theheartfickle/dsh-skill-creator-plugin@latest
 ```
 
-### plugin-registry（可选）
+### plugin-registry
 
-仓库已提供 `dsh.plugin.json`（id：`theheartfickle/dsh-skill-creator`），为后续接入 `dsh registry` 通道做好准备。
+打包并安装：
+
+```sh
+node scripts/package-registry.mjs
+dsh registry install ./registry
+dsh registry enable theheartfickle/dsh-skill-creator
+```
+
+`registry/` 是本地生成的安装暂存目录，不会提交到仓库。
 
 ## 磁盘写入说明
 
@@ -41,5 +49,4 @@ dsh plugin --profile web add @theheartfickle/dsh-skill-creator-plugin@latest
 ## 未来计划
 
 - 将插件发布到 npm，支持 `dsh plugin add` 一键安装。
-- 补充 `dsh registry` 打包脚本，接入 plugin-registry 安装通道。
 - 后续可扩展更多 skill 开发相关能力，但会保持 CLI 零依赖和轻量维护。

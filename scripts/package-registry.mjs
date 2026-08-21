@@ -5,7 +5,7 @@
  *
  *   node scripts/package-registry.mjs
  *   dsh registry install ./registry
- *   dsh registry enable theheartfickle/dsh-skill-creator
+ *   dsh registry enable the-heart-fickle/dsh-skill-creator
  *
  * The staging directory contains exactly the files the manifest references
  * plus the bundled skill resources and docs. It is gitignored and rebuilt
@@ -44,4 +44,4 @@ for (const file of files) {
 }
 
 console.log(`registry/ assembled (${files.length} files)`);
-console.log('next: dsh registry install ./registry && dsh registry enable theheartfickle/dsh-skill-creator');
+console.log('next: dsh registry install ./registry && dsh registry enable the-heart-fickle/dsh-skill-creator');

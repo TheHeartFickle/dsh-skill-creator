@@ -1,5 +1,5 @@
 {
-  "name": "@theheartfickle/dsh-skill-creator-plugin",
+  "name": "@the-heart-fickle/dsh-skill-creator-plugin",
   "version": "0.1.0",
   "description": "DSH plugin that bundles the dsh-skill-creator skill: create, benchmark, review, and iterate DSH skills.",
   "type": "module",

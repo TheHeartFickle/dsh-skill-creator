@@ -1,11 +1,11 @@
-# @theheartfickle/dsh-skill-creator bundle patch
+# @the-heart-fickle/dsh-skill-creator bundle patch
 #
 # When installed through the official CLI:
 #
-#   dsh plugin --profile <name> add @theheartfickle/dsh-skill-creator@latest
+#   dsh plugin --profile <name> add @the-heart-fickle/dsh-skill-creator@latest
 #
 # or listed in `dsh.profile.bundles`, this patch inserts the plugin row so the
 # bundled `dsh-skill-creator` skill provider is mounted.
 - insert:
     - id: skill-creator
-      name: '@theheartfickle/dsh-skill-creator'
+      name: '@the-heart-fickle/dsh-skill-creator'

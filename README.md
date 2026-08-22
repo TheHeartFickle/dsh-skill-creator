@@ -7,14 +7,14 @@
 - 提供一个开箱即用的 DSH skill（`dsh-skill-creator/`），覆盖从访谈、起草、评测、评审到迭代改进的完整流程。
 - 内置纯 Node.js 的 CLI 工具（`validate` / `benchmark` / `review`），零第三方依赖。
 - 通过本地 Web viewer 查看评测输出、量化结果并收集反馈。
-- 已封装为 DSH 插件：`@theheartfickle/dsh-skill-creator-plugin`，安装后自动注册 `dsh-skill-creator` skill。
+- 已封装为 DSH 插件：`@theheartfickle/dsh-skill-creator`，安装后自动注册 `dsh-skill-creator` skill。
 
 ## 安装
 
 ### 官方 npm / DSH CLI（发布 npm 后）
 
 ```sh
-dsh plugin --profile web add @theheartfickle/dsh-skill-creator-plugin@latest
+dsh plugin --profile web add @theheartfickle/dsh-skill-creator@latest
 ```
 
 ### plugin-registry
